@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <link rel="stylesheet" href="./tribute.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <img src="./APJ.jpg" alt="Image">
+        </div>
+        <div class="right-container">
+            <div class="content-container">
+                <h1>APJ Abdul Kalam</h1>
+                <h5>1931-2015</h5>
+                <hr>
+                <p>Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist and statesman who served as the 11th President of India from 2002 to 2007. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering. He spent the next four decades as a scientist and science administrator. He thus came to be known as the "Missile Man of India" for his work on the development of ballistic missile and launch vehicle technology.</p>
+            </div>
+            <button onclick="displayToggle()">More</button>
+        </div>
+    </div>
+    <div class="extra-container">
+        <div class="extra-inner">
+            <h3>Biography</h3>
+            <p>Abdul Kalam was an aerospace scientist, joined India’s defense after graduating from Madras Institute of Technology. He is known to be one of the prominent figures in the development of the country’s nuclear capabilities and is known to be a nation’s hero in building the country’s scientific power. Abdul Kalam has also served the country as a president for one term 2002 to 2007 and he died of a heart attack on July 27, 2015.</p>
+        </div>
+        <div class="extra-inner">
+            <h3>Achievements</h3>
+            <p>Abdul Kalam was a person of a golden heart who has received ample awards and achieved many things during his life journey. In 1981 Abdul Kalam received the prestigious Padma Bhushan award. In 1990 he received the Padma Bhushan award. The renowned personality, because of his tremendous effort towards the nation, received the Bharat Ratna in 1997. In the same year, he was awarded the Indira Gandhi Award for National Integration. The government of India awarded Kalam with the Veer Savarkar award in 1998. Because of his contribution to arts, science, and technology, he received the SASTRA Ramanujan prize in 2000. Finally, in the year 2013, the eminent personality was bestowed with the Von Braun Award by the National Space Society.</p>
+        </div>
+    </div>
+    <script>
+        function displayToggle(){
+            const div = document.querySelector('.extra-container');
+            const btn = document.querySelector('button');
+            if(div.style.display==='none'){
+                div.style.display = 'block';
+                btn.innerHTML = 'Less';
+            }
+            else{
+                div.style.display = 'none';
+                btn.innerHTML = 'More';
+            }
+        }
+    </script>
+</body>
+</html>
